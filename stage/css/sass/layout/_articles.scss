@@ -1,0 +1,55 @@
+.main-article {
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+  h3 {
+    @extend %articleHeader;
+    margin-bottom: 30px;
+  }
+  p {
+    @extend %paragraph;
+  }
+  small {
+    color: $descHeaderColor;
+    letter-spacing: 1.6px;
+    font-size: 15px;
+  }
+}
+.more {
+  @include buttonBg($loadBtnColor);
+  margin: 20px auto;
+  display: block;
+}
+
+@if $pageTitle == 'blogPage' {
+  .main-article {
+    margin: {
+      top: 50px;
+      bottom: 50px;
+    }
+    ul {
+      @extend %paragraph;
+      a {
+        text-decoration: none;
+      }
+    }
+    .buttons {
+      .add {
+        @include buttonBg($listBtnColor);
+      }
+      .stars {
+        i {
+          font-size: 1rem;
+          color: #e8e80d;
+          &:not(:last-of-type) {
+            margin-right: 5px;
+          }
+        }
+        a {
+          text-decoration: none;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

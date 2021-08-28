@@ -1,0 +1,9 @@
+.side-news {
+  h3 {
+    @extend %newsHeader;
+  }
+  p {
+    @extend %paragraph;
+    margin-bottom: 0;
+  }
+}

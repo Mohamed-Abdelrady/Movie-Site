@@ -1,0 +1,22 @@
+- var pageTitle = 'Blogpage'
+include pug/mixins/articles
+include pug/mixins/news
+
+doctype html
+html(lang="en")
+    head
+        include pug/structure/meta
+        include pug/structure/styles
+    body
+        .bg-header
+            include pug/components/navbar
+            +articles(articles.theDarkKnight)
+            .container
+                .row.align-items-center.my-2
+                    .col-lg-4.col-md-12.order-last.order-lg-first.mt-sm-4.mt-0.d-none.d-sm-block
+                        +sideNews(sideNews, ' col-lg-12 col-sm-3')
+                    .col
+                        img.w-100(src="img/blogpage/video.png")
+        +news(news)
+        include pug/layout/footer
+        include pug/structure/scripts

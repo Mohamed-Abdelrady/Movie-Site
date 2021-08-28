@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mylist</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/fontawesome.min.css">
+    <link rel="stylesheet" href="css/libs/brands.min.css">
+    <link rel="stylesheet" href="css/libs/solid.min.css">
+    <link rel="stylesheet" href="css/mylist.css">
+  </head>
+  <body>
+    <div class="bg-header">
+      <nav class="navbar-up container"><a class="nav-logo" href="#"><span>D</span>euce</a>
+        <div class="nav-parent">
+          <ul class="nav-menu list-unstyled text-uppercase">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="moviepage.html">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" href="blogpage.html">Description</a></li>
+            <li class="nav-item active"><a class="nav-link" href="mylist.html">My List</a></li>
+            <li class="nav-item"><a class="nav-link" href="articleblogpage.html">Movie Page</a></li>
+          </ul>
+        </div>
+        <div class="bars ms-4"><span class="bar"></span><span class="bar"></span><span class="bar">                       </span></div>
+        <form class="d-flex">
+          <div class="search d-flex border-bottom align-self-center">
+            <input class="form-control p-0 bg-transparent border-0" type="text" placeholder="Search.." aria-label="Search"><i class="fas fa-search"></i>
+          </div>
+          <div class="buttons d-flex">
+            <button class="bg-transparent border-0">Login</button>
+            <button class="border-0">Sign Up</button>
+          </div>
+        </form>
+      </nav>
+      <div class="shuffleMovies text-center">
+        <div class="container">
+          <h2 class="text-left">My List</h2>
+          <div class="buttons mb-4">
+            <div class="btn-group row g-3 justify-content-center" role="group" aria-label="Basic radio toggle button group">
+              <input class="btn-check" id="all" type="radio" name="shuffle-filter" checked=""/>
+              <label class="col flex-grow-0" for="all">All</label>
+              <input class="btn-check" type="radio" name="shuffle-filter" id="adventure"/>
+              <label class="col flex-grow-0" for="adventure">adventure</label>
+              <input class="btn-check" type="radio" name="shuffle-filter" id="action"/>
+              <label class="col flex-grow-0" for="action">action</label>
+              <input class="btn-check" type="radio" name="shuffle-filter" id="animation"/>
+              <label class="col flex-grow-0" for="animation">animation</label>
+              <input class="btn-check" type="radio" name="shuffle-filter" id="biography"/>
+              <label class="col flex-grow-0" for="biography">biography</label>
+              <input class="btn-check" type="radio" name="shuffle-filter" id="crime"/>
+              <label class="col flex-grow-0" for="crime">crime</label>
+              <input class="btn-check" type="radio" name="shuffle-filter" id="comedy"/>
+              <label class="col flex-grow-0" for="comedy">comedy</label>
+              <input class="btn-check" type="radio" name="shuffle-filter" id="drama"/>
+              <label class="col flex-grow-0" for="drama">drama</label>
+              <input class="btn-check" type="radio" name="shuffle-filter" id="documentary"/>
+              <label class="col flex-grow-0" for="documentary">documentary</label>
+            </div>
+          </div>
+          <div class="row my-shuffle g-3">
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;adventure&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/blackwidow_lob_crd_06.jpg"/></div>
+              </div>
+            </figure>
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;adventure&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://m.media-amazon.com/images/M/MV5BNGQ2MGQ1ZGQtOTY4MS00ZDA5LWE5YmUtMGE0YTE2YTZiODZkXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_FMjpg_UX1000_.jpg"/></div>
+              </div>
+            </figure>
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;action&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://media-cache.cinematerial.com/p/500x/7efk1anf/nobody-movie-cover.jpg?v=1618753351"/></div>
+              </div>
+            </figure>
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;action&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe5P_W0uo6hvKnrbXaBn3Rxfj3sIwDYjiCaZdyiR-wxtXYsGtMJ6WRS3fBIRrCRLFXFco&amp;usqp=CAU"/></div>
+              </div>
+            </figure>
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;animation&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://pm1.narvii.com/6356/60e885274baa95b141cbe7b6cbd1549cc85269ae_hq.jpg"/></div>
+              </div>
+            </figure>
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;animation&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://animenewsandfacts.com/wp-content/uploads/2020/05/IMG_20200529_145307.jpg"/></div>
+              </div>
+            </figure>
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;biography&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://m.media-amazon.com/images/M/MV5BOTgwMzFiMWYtZDhlNS00ODNkLWJiODAtZDVhNzgyNzJhYjQ4L2ltYWdlXkEyXkFqcGdeQXVyNzEzOTYxNTQ@._V1_.jpg"/></div>
+              </div>
+            </figure>
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;crime&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlvSENVL7lZO4zgSusGEmYkcFew8jPt0EFaBI4_uSUJA6DHa25SEfnho7L_wawm4MmNHc&amp;usqp=CAU"/></div>
+              </div>
+            </figure>
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;comedy&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://images-na.ssl-images-amazon.com/images/I/71yraS3WEzL._SL1290_.jpg"/></div>
+              </div>
+            </figure>
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;drama&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://media.elcinema.com/uploads/_320x_00844088d2cbdedd37b7b175899c667286247a438d1bdc9f167cfe3ee6f274b6.jpg"/></div>
+              </div>
+            </figure>
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;documentary&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQesiPV3NjAimLMV19UWLy-vINFZ9t-QazW0WT-RqrZEhv8xACtixgcLKxOLqWO2m5NuF4&amp;usqp=CAU"/></div>
+              </div>
+            </figure>
+            <figure class="image-item col-lg-3 col-4" data-groups="[&quot;documentary&quot;]">
+              <div class="aspect">
+                <div class="aspect__inner"><img src="https://resizing.flixster.com/Pph8CeGWgpP-cPwhzLlhnqXkcrQ=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzL2E5OTIxMzQ0LTdlN2MtNDg3Ni05NGZiLWI0MjJiMDVkMGRjYy5qcGc="/></div>
+              </div>
+            </figure>
+            <div class="col-1 my-sizer-elements"></div>
+          </div>
+          <button class="more"><i class="fas fa-plus"></i>Load More</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col">
+            <h3>Movies &amp; Serials</h3>
+            <div class="row">
+                  <ul class="col-sm col-6 list-unstyled m-0">
+                    <li>Action</li>
+                    <li>Adventure</li>
+                    <li>Animation</li>
+                    <li>Biography</li>
+                    <li>Comedy</li>
+                    <li>Crime</li>
+                    <li>Documentary</li>
+                    <li>Drama</li>
+                    <li>Family</li>
+                    <li>Fantasy</li>
+                  </ul>
+                  <ul class="col-sm col-6 list-unstyled m-0">
+                    <li>Film Noir</li>
+                    <li>History</li>
+                    <li>Horror</li>
+                    <li>Music</li>
+                    <li>Musical</li>
+                    <li>Mystery</li>
+                    <li>Romance</li>
+                    <li>Sci-Fi</li>
+                    <li>Short</li>
+                    <li>Sport</li>
+                  </ul>
+                  <ul class="col-sm col-6 list-unstyled m-0">
+                    <li>Superhero</li>
+                    <li>Thriller</li>
+                    <li>War</li>
+                    <li>Western</li>
+                  </ul>
+            </div>
+          </div>
+          <div class="col-sm">
+            <h3>Others</h3>
+            <div class="row">
+                  <ul class="col-sm col-6 list-unstyled m-0">
+                    <li>Home</li>
+                    <li>Top Rated Movies</li>
+                    <li>Box Office</li>
+                    <li>Tv</li>
+                    <li>Comming Soon</li>
+                    <li>Site Index</li>
+                    <li>Search</li>
+                    <li>In Theaters</li>
+                    <li>Contact Us</li>
+                    <li>Register</li>
+                  </ul>
+                  <ul class="col-sm col-6 list-unstyled m-0">
+                    <li>News</li>
+                    <li>Press Room</li>
+                    <li>Advertising</li>
+                    <li>Jobs</li>
+                    <li>Conditions of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Interests-Based Ads</li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row bottom g-4 mt-1">
+          <div class="col-sm">
+            <h2 class="d-inline-flex align-items-center"><span class="me-1">D</span>Deuce</h2>
+            <p class="m-0">&copy; 2021 Deuce Studio. All right reserved.</p>
+          </div>
+          <div class="col-sm text-sm-end align-self-end"><i class="fab fa-facebook fa-2x fa-fw"></i><i class="fab fa-google-plus fa-2x fa-fw"></i><i class="fab fa-twitter fa-2x fa-fw"></i><i class="fab fa-instagram fa-2x fa-fw"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="https://unpkg.com/shufflejs@5"></script>
+    <script src="js/libs/shuffleMovies.min.js"></script>
+  </body>
+</html>

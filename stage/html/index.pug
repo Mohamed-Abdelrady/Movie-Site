@@ -1,0 +1,41 @@
+﻿- var pageTitle = 'Homepage'
+include pug/varriables/direction
+include pug/varriables/myMovies
+include pug/mixins/banners
+include pug/mixins/slider
+include pug/mixins/shuffleMovies
+include pug/mixins/articles
+include pug/mixins/news
+doctype html
+html(lang="en")
+    head
+        include pug/structure/meta
+        include pug/structure/styles
+    body
+        .bg-header
+            include pug/components/navbar
+            +movieBox(myMovies.avengers)
+            +slider(myMovies, 'Popular Movies')
+        +movieBox(myMovies.missions, textRight)
+        .shuffleMovies.text-center
+            .container
+                h2.text-start Trends Now
+                +shuffleMovies(shuffleMovies)
+        +movieBox(myMovies.jurassic)
+        +movieBox(myMovies.venom, textRight)
+        .blogs.py-2
+            .container
+                .row
+                    .col-md-8.col-12
+                        +articles(articles, 1)
+                    .col-4.d-none.d-md-block
+                        +sideNews(sideNews)
+        +news(news, true)
+        include pug/layout/footer
+        include pug/structure/scripts
+
+        script(src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js")
+        script(src="https://unpkg.com/shufflejs@5")
+        script(src="js/libs/movieSlider.min.js")
+        script(src="js/libs/shuffleMovies.min.js")
+

@@ -1,0 +1,14 @@
+%genres {
+  text-transform: uppercase;
+  @each $badgeNo, $badgeColor in $badgesColor {
+    li:nth-of-type(#{$badgeNo}) {
+      background-color: #{$badgeColor};
+      margin: 0 3px;
+      padding: 5px 7px;
+      border-radius: 5px;
+      letter-spacing: 1.6px;
+      font-weight: 400;
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+- var pageTitle = 'Mylist'
+include pug/mixins/shuffleMovies
+doctype html
+html(lang="en")
+    head
+        include pug/structure/meta
+        include pug/structure/styles
+    body
+        .bg-header
+            include pug/components/navbar
+            .shuffleMovies.text-center
+                .container
+                    h2.text-left My List
+                    +shuffleMovies(shuffleMovies)
+        include pug/layout/footer
+        include pug/structure/scripts
+        script(src="https://unpkg.com/shufflejs@5")
+        script(src="js/libs/shuffleMovies.min.js")

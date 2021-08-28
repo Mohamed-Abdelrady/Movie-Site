@@ -1,0 +1,20 @@
+.news {
+  padding: 30px 0;
+  .card {
+    border: 0;
+    p {
+      padding: 10px;
+      bottom: 0;
+      min-height: 90px;
+      background-color: rgba(0, 0, 0, 0.7);
+      @extend %newsHeader;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .more {
+    @include buttonBg($loadBtnColor);
+    margin: 20px auto;
+    display: block;
+  }
+}

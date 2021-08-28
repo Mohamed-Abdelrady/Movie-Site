@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/fontawesome.min.css">
+    <link rel="stylesheet" href="css/libs/brands.min.css">
+    <link rel="stylesheet" href="css/libs/solid.min.css">
+    <link rel="stylesheet" href="css/homepage.css">
+  </head>
+  <body>
+    <div class="bg-header">
+      <nav class="navbar-up container"><a class="nav-logo" href="#"><span>D</span>euce</a>
+        <div class="nav-parent">
+          <ul class="nav-menu list-unstyled text-uppercase">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="moviepage.html">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" href="blogpage.html">Description</a></li>
+            <li class="nav-item"><a class="nav-link" href="mylist.html">My List</a></li>
+            <li class="nav-item"><a class="nav-link" href="articleblogpage.html">Movie Page</a></li>
+          </ul>
+        </div>
+        <div class="bars ms-4"><span class="bar"></span><span class="bar"></span><span class="bar">                       </span></div>
+        <form class="d-flex">
+          <div class="search d-flex border-bottom align-self-center">
+            <input class="form-control p-0 bg-transparent border-0" type="text" placeholder="Search.." aria-label="Search"><i class="fas fa-search"></i>
+          </div>
+          <div class="buttons d-flex">
+            <button class="bg-transparent border-0">Login</button>
+            <button class="border-0">Sign Up</button>
+          </div>
+        </form>
+      </nav>
+      <div class="banner">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col text" style="order : 0">
+              <div class="genres">
+                <ul class="list-unstyled">
+                  <li class="badge">2012</li>
+                  <li class="badge">action</li>
+                  <li class="badge">adventure</li>
+                </ul>
+              </div>
+              <div class="info">
+                <h2>The Avengers</h2>
+                <p>When Thor's evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented threat to Earth.</p>
+              </div>
+              <div class="buttons">
+                <button class="play"><i class="fas fa-play"></i>Play Trailer</button>
+                <button class="add"><i class="fas fa-plus"></i>Add To List</button>
+              </div>
+            </div>
+            <div class="col-lg-6 image"><img class="w-100" src="img/articles/avengers.png"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="container-fluid">
+          <div class="container">
+            <h2>Popular Movies</h2>
+          </div>
+          <section class="items">
+            <div class="carouselOfImages">
+              <div class="carouselImage" style="background-size:cover;"><img data-tab="theavengers" src="img/articles/avengers.png"/></div>
+              <div class="carouselImage" style="background-size:cover;"><img data-tab="missionimpossible" src="img/articles/mission.png"/></div>
+              <div class="carouselImage" style="background-size:cover;"><img data-tab="jurassicworldfallenkingdom" src="img/articles/jurassic.png"/></div>
+              <div class="carouselImage" style="background-size:cover;"><img data-tab="venom" src="img/articles/venom.png"/></div>
+              <div class="carouselImage" style="background-size:cover;"><img data-tab="thor" src="https://mikeantjones.files.wordpress.com/2012/04/thor-film-poster.jpg"/></div>
+              <div class="carouselImage" style="background-size:cover;"><img data-tab="johnwick2" src="https://images-na.ssl-images-amazon.com/images/I/91H06HPhX%2BL._SY717_.jpg"/></div>
+              <div class="carouselImage" style="background-size:cover;"><img data-tab="jamesbond" src="https://images-na.ssl-images-amazon.com/images/I/51IlnaL6QsL._SX351_BO1,204,203,200_.jpg"/></div>
+              <div class="carouselImage" style="background-size:cover;"><img data-tab="deadpool2" src="https://icdn3.digitaltrends.com/image/deadpool-2-thanksgiving-poster-1294x2048.jpg"/></div>
+              <div class="carouselImage" style="background-size:cover;"><img data-tab="fightclub" src="https://i.pinimg.com/736x/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02--classic-poster-classic-movies-posters.jpg"/></div>
+              <div class="carouselImage" style="background-size:cover;"><img data-tab="dunkirk" src="http://www.gmhslasso.org/wp-content/uploads/2018/01/Stegenga_BestMoviesof2017_Photo2.jpg"/></div>
+              <div class="carouselImage" style="background-size:cover;"><img data-tab="interstellar" src="https://storage.highresaudio.com/web/imgcache/971622b28b3cddfd03a7e30de7ff52dc/3jtugi-interstell-preview-m3_550x550.jpg"/></div>
+            </div>
+          </section>
+          <section class="product-detail hide theavengers">
+            <div class="product-detail-inner"><a class="product-detail-close">X</a>
+              <div class="row align-items-center">
+                <div class="product-detail-image col-lg-4 col-12 mb-2 mb-lg-0"><img class="w-100" src=""/></div>
+                <div class="product-detail-text col-lg-8 col-12">
+                  <h3>The Avengers</h3>
+                  <p>When Thor's evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented threat to Earth.</p>
+                  <button class="play" data-bs-target=".modal-1" data-bs-toggle="modal">Show Trailer</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail hide missionimpossible">
+            <div class="product-detail-inner"><a class="product-detail-close">X</a>
+              <div class="row align-items-center">
+                <div class="product-detail-image col-lg-4 col-12 mb-2 mb-lg-0"><img class="w-100" src=""/></div>
+                <div class="product-detail-text col-lg-8 col-12">
+                  <h3>Mission: Impossible</h3>
+                  <p>Ethan Hunt and the IMF team join forces with CIA assassin August Walker to prevent a disaster of epic proportions. Arms dealer John Lark and a group of terrorists known as the Apostles plan to use three plutonium cores for a simultaneous nuclear attack on the Vatican. Jerusalem and Mecca, Saudi Arabia. When the weapons go missing, Ethan and his crew find themselves in a desperate race against time to prevent them from falling into the wrong hands.</p>
+                  <button class="play" data-bs-target=".modal-1" data-bs-toggle="modal">Show Trailer</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail hide jurassicworldfallenkingdom">
+            <div class="product-detail-inner"><a class="product-detail-close">X</a>
+              <div class="row align-items-center">
+                <div class="product-detail-image col-lg-4 col-12 mb-2 mb-lg-0"><img class="w-100" src=""/></div>
+                <div class="product-detail-text col-lg-8 col-12">
+                  <h3>Jurassic World: fallen kingdom</h3>
+                  <p>Three years after the destruction of the Jurassic World theme park, Owen Grady and Claire Dearing return to the island of Isla Nublar to save the remaining dinosaurs from a volcano that's about to erupt. They soon encounter terrifying new breeds of gigantic. dinosaurs, while uncovering a conspiracy that threatens the entire planet.</p>
+                  <button class="play" data-bs-target=".modal-1" data-bs-toggle="modal">Show Trailer</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail hide venom">
+            <div class="product-detail-inner"><a class="product-detail-close">X</a>
+              <div class="row align-items-center">
+                <div class="product-detail-image col-lg-4 col-12 mb-2 mb-lg-0"><img class="w-100" src=""/></div>
+                <div class="product-detail-text col-lg-8 col-12">
+                  <h3>Venom</h3>
+                  <p>Journalist Eddie Brock is trying to take down Carlton Drake, the notorious and brilliant founder of the Life Foundation. While investigating one of Drake's experiments, Eddie's body merges with the alien Venom -- leaving him with superhuman strength and power.</p>
+                  <button class="play" data-bs-target=".modal-1" data-bs-toggle="modal">Show Trailer</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail hide thor">
+            <div class="product-detail-inner"><a class="product-detail-close">X</a>
+              <div class="row align-items-center">
+                <div class="product-detail-image col-lg-4 col-12 mb-2 mb-lg-0"><img class="w-100" src=""/></div>
+                <div class="product-detail-text col-lg-8 col-12">
+                  <h3>Thor</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida accumsan lacus vel facilisis.</p>
+                  <button class="play" data-bs-target=".modal-1" data-bs-toggle="modal" data-the-video="https://www.youtube.com/embed/ke79K4bO4P8?rel=0&amp;amp;showinfo=0&amp;amp;wmode=opaque&amp;amp;html5=1">Show Trailer</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail hide johnwick2">
+            <div class="product-detail-inner"><a class="product-detail-close">X</a>
+              <div class="row align-items-center">
+                <div class="product-detail-image col-lg-4 col-12 mb-2 mb-lg-0"><img class="w-100" src=""/></div>
+                <div class="product-detail-text col-lg-8 col-12">
+                  <h3>John Wick 2</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida accumsan lacus vel facilisis.</p>
+                  <button class="play" data-bs-target=".modal-1" data-bs-toggle="modal" data-the-video="https://www.youtube.com/embed/XGk2EfbD_Ps?rel=0&amp;amp;showinfo=0&amp;amp;wmode=opaque&amp;amp;html5=1">Show Trailer</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail hide jamesbond">
+            <div class="product-detail-inner"><a class="product-detail-close">X</a>
+              <div class="row align-items-center">
+                <div class="product-detail-image col-lg-4 col-12 mb-2 mb-lg-0"><img class="w-100" src=""/></div>
+                <div class="product-detail-text col-lg-8 col-12">
+                  <h3>James Bond</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida accumsan lacus vel facilisis.</p>
+                  <button class="play" data-bs-target=".modal-1" data-bs-toggle="modal" data-the-video="https://www.youtube.com/embed/7GqClqvlObY?rel=0&amp;amp;showinfo=0&amp;amp;wmode=opaque&amp;amp;html5=1">Show Trailer</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail hide deadpool2">
+            <div class="product-detail-inner"><a class="product-detail-close">X</a>
+              <div class="row align-items-center">
+                <div class="product-detail-image col-lg-4 col-12 mb-2 mb-lg-0"><img class="w-100" src=""/></div>
+                <div class="product-detail-text col-lg-8 col-12">
+                  <h3>Deadpool 2</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida accumsan lacus vel facilisis.</p>
+                  <button class="play" data-bs-target=".modal-1" data-bs-toggle="modal" data-the-video="https://www.youtube.com/embed/20bpjtCbCz0?rel=0&amp;amp;showinfo=0&amp;amp;wmode=opaque&amp;amp;html5=1">Show Trailer</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail hide fightclub">
+            <div class="product-detail-inner"><a class="product-detail-close">X</a>
+              <div class="row align-items-center">
+                <div class="product-detail-image col-lg-4 col-12 mb-2 mb-lg-0"><img class="w-100" src=""/></div>
+                <div class="product-detail-text col-lg-8 col-12">
+                  <h3>Fight Club</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida accumsan lacus vel facilisis.</p>
+                  <button class="play" data-bs-target=".modal-1" data-bs-toggle="modal" data-the-video="https://www.youtube.com/embed/SUXWAEX2jlg?rel=0&amp;amp;showinfo=0&amp;amp;wmode=opaque&amp;amp;html5=1">Show Trailer</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail hide dunkirk">
+            <div class="product-detail-inner"><a class="product-detail-close">X</a>
+              <div class="row align-items-center">
+                <div class="product-detail-image col-lg-4 col-12 mb-2 mb-lg-0"><img class="w-100" src=""/></div>
+                <div class="product-detail-text col-lg-8 col-12">
+                  <h3>Dunkirk</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida accumsan lacus vel facilisis.</p>
+                  <button class="play" data-bs-target=".modal-1" data-bs-toggle="modal" data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;amp;showinfo=0&amp;amp;wmode=opaque&amp;amp;html5=1">Show Trailer</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="product-detail hide interstellar">
+            <div class="product-detail-inner"><a class="product-detail-close">X</a>
+              <div class="row align-items-center">
+                <div class="product-detail-image col-lg-4 col-12 mb-2 mb-lg-0"><img class="w-100" src=""/></div>
+                <div class="product-detail-text col-lg-8 col-12">
+                  <h3>Interstellar</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida accumsan lacus vel facilisis.</p>
+                  <button class="play" data-bs-target=".modal-1" data-bs-toggle="modal" data-the-video="https://www.youtube.com/embed/Lm8p5rlrSkY?rel=0&amp;amp;showinfo=0&amp;amp;wmode=opaque&amp;amp;html5=1">Show Trailer</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div id="dark"></div>
+          <div id="lightbox"></div>
+          <div class="modal fade modal-media modal-video modal-slim modal-1" aria-labelledby="modal-1-label" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <button class="close" aria-label="Close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">X</span></button>
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9 h-100 w-100">
+                    <iframe allowfullscreen="" frameborder="0" src="" width="100%" height="100%"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col text" style="order:1;">
+            <div class="genres">
+              <ul class="list-unstyled">
+                <li class="badge">2018</li>
+                <li class="badge">action</li>
+                <li class="badge">adventure</li>
+              </ul>
+            </div>
+            <div class="info">
+              <h2>Mission: Impossible</h2>
+              <p>Ethan Hunt and the IMF team join forces with CIA assassin August Walker to prevent a disaster of epic proportions. Arms dealer John Lark and a group of terrorists known as the Apostles plan to use three plutonium cores for a simultaneous nuclear attack on the Vatican. Jerusalem and Mecca, Saudi Arabia. When the weapons go missing, Ethan and his crew find themselves in a desperate race against time to prevent them from falling into the wrong hands.</p>
+            </div>
+            <div class="buttons" style="float:right">
+              <button class="play"><i class="fas fa-play"></i>Play Trailer</button>
+              <button class="add"><i class="fas fa-plus"></i>Add To List</button>
+            </div>
+          </div>
+          <div class="col-lg-6 image"><img class="w-100" src="img/articles/mission.png"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="shuffleMovies text-center">
+      <div class="container">
+        <h2 class="text-start">Trends Now</h2>
+        <div class="buttons mb-4">
+          <div class="btn-group row g-3 justify-content-center" role="group" aria-label="Basic radio toggle button group">
+            <input class="btn-check" id="all" type="radio" name="shuffle-filter" checked=""/>
+            <label class="col flex-grow-0" for="all">All</label>
+            <input class="btn-check" type="radio" name="shuffle-filter" id="adventure"/>
+            <label class="col flex-grow-0" for="adventure">adventure</label>
+            <input class="btn-check" type="radio" name="shuffle-filter" id="action"/>
+            <label class="col flex-grow-0" for="action">action</label>
+            <input class="btn-check" type="radio" name="shuffle-filter" id="animation"/>
+            <label class="col flex-grow-0" for="animation">animation</label>
+            <input class="btn-check" type="radio" name="shuffle-filter" id="biography"/>
+            <label class="col flex-grow-0" for="biography">biography</label>
+            <input class="btn-check" type="radio" name="shuffle-filter" id="crime"/>
+            <label class="col flex-grow-0" for="crime">crime</label>
+            <input class="btn-check" type="radio" name="shuffle-filter" id="comedy"/>
+            <label class="col flex-grow-0" for="comedy">comedy</label>
+            <input class="btn-check" type="radio" name="shuffle-filter" id="drama"/>
+            <label class="col flex-grow-0" for="drama">drama</label>
+            <input class="btn-check" type="radio" name="shuffle-filter" id="documentary"/>
+            <label class="col flex-grow-0" for="documentary">documentary</label>
+          </div>
+        </div>
+        <div class="row my-shuffle g-3">
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;adventure&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/blackwidow_lob_crd_06.jpg"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;adventure&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://m.media-amazon.com/images/M/MV5BNGQ2MGQ1ZGQtOTY4MS00ZDA5LWE5YmUtMGE0YTE2YTZiODZkXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_FMjpg_UX1000_.jpg"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;action&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://media-cache.cinematerial.com/p/500x/7efk1anf/nobody-movie-cover.jpg?v=1618753351"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;action&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe5P_W0uo6hvKnrbXaBn3Rxfj3sIwDYjiCaZdyiR-wxtXYsGtMJ6WRS3fBIRrCRLFXFco&amp;usqp=CAU"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;animation&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://pm1.narvii.com/6356/60e885274baa95b141cbe7b6cbd1549cc85269ae_hq.jpg"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;animation&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://animenewsandfacts.com/wp-content/uploads/2020/05/IMG_20200529_145307.jpg"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;biography&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://m.media-amazon.com/images/M/MV5BOTgwMzFiMWYtZDhlNS00ODNkLWJiODAtZDVhNzgyNzJhYjQ4L2ltYWdlXkEyXkFqcGdeQXVyNzEzOTYxNTQ@._V1_.jpg"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;crime&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlvSENVL7lZO4zgSusGEmYkcFew8jPt0EFaBI4_uSUJA6DHa25SEfnho7L_wawm4MmNHc&amp;usqp=CAU"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;comedy&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://images-na.ssl-images-amazon.com/images/I/71yraS3WEzL._SL1290_.jpg"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;drama&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://media.elcinema.com/uploads/_320x_00844088d2cbdedd37b7b175899c667286247a438d1bdc9f167cfe3ee6f274b6.jpg"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;documentary&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQesiPV3NjAimLMV19UWLy-vINFZ9t-QazW0WT-RqrZEhv8xACtixgcLKxOLqWO2m5NuF4&amp;usqp=CAU"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-lg-3 col-4" data-groups="[&quot;documentary&quot;]">
+            <div class="aspect">
+              <div class="aspect__inner"><img src="https://resizing.flixster.com/Pph8CeGWgpP-cPwhzLlhnqXkcrQ=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzL2E5OTIxMzQ0LTdlN2MtNDg3Ni05NGZiLWI0MjJiMDVkMGRjYy5qcGc="/></div>
+            </div>
+          </figure>
+          <div class="col-1 my-sizer-elements"></div>
+        </div>
+        <button class="more"><i class="fas fa-plus"></i>Load More</button>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col text" style="order : 0">
+            <div class="genres">
+              <ul class="list-unstyled">
+                <li class="badge">2019</li>
+                <li class="badge">action</li>
+                <li class="badge">adventure</li>
+              </ul>
+            </div>
+            <div class="info">
+              <h2>Jurassic World: fallen kingdom</h2>
+              <p>Three years after the destruction of the Jurassic World theme park, Owen Grady and Claire Dearing return to the island of Isla Nublar to save the remaining dinosaurs from a volcano that's about to erupt. They soon encounter terrifying new breeds of gigantic. dinosaurs, while uncovering a conspiracy that threatens the entire planet.</p>
+            </div>
+            <div class="buttons">
+              <button class="play"><i class="fas fa-play"></i>Play Trailer</button>
+              <button class="add"><i class="fas fa-plus"></i>Add To List</button>
+            </div>
+          </div>
+          <div class="col-lg-6 image"><img class="w-100" src="img/articles/jurassic.png"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col text" style="order:1;">
+            <div class="genres">
+              <ul class="list-unstyled">
+                <li class="badge">2020</li>
+                <li class="badge">action</li>
+                <li class="badge">sci-fi</li>
+              </ul>
+            </div>
+            <div class="info">
+              <h2>Venom</h2>
+              <p>Journalist Eddie Brock is trying to take down Carlton Drake, the notorious and brilliant founder of the Life Foundation. While investigating one of Drake's experiments, Eddie's body merges with the alien Venom -- leaving him with superhuman strength and power.</p>
+            </div>
+            <div class="buttons" style="float:right">
+              <button class="play"><i class="fas fa-play"></i>Play Trailer</button>
+              <button class="add"><i class="fas fa-plus"></i>Add To List</button>
+            </div>
+          </div>
+          <div class="col-lg-6 image"><img class="w-100" src="img/articles/venom.png"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="blogs py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-12">
+            <div class="main-article">
+              <div class="row g-3 align-items-start">
+                <div class="col-lg-6"><img class="w-100" src="img/articles/THG.png"/></div>
+                <div class="col-lg">
+                  <h3>THE HUNGER GAMES : CATCHING FIRE</h3>
+                  <p>After arriving safely home from their unprecedented victory in the 74th Annual Hunger Games, Katniss Everdeen (Jennifer Lawrence) and Peeta Mellark (Josh Hutcherson) discover that they must do a quick turnaround and begin a Victors Tour. As she and Peeta travel throughout the districts, Katniss senses a rebellion is stirring.</p>
+                  <p>However, President Snow (Donald Sutherland) proves that he is still very much in control when word comes of a cruel change in the rules for the upcoming 75th Hunger Games.</p><small>Continue Reading &gt;</small>
+                </div>
+              </div>
+            </div>
+            <div class="main-article">
+            </div>
+            <div class="main-article">
+            </div>
+          </div>
+          <div class="col-4 d-none d-md-block">
+            <div class="side-news row">
+              <div class="mb-3 col-md-12">
+                <div class="row g-2 align-items-center">
+                  <div class="col-lg-3"><img class="w-100" src="img/sidenews/first.png"/></div>
+                  <div class="col-lg">
+                    <h3 class="card-title">How much cost to do amovie like Hunger Games.</h3>
+                    <p class="card-text"><small class="text-mutedLast">Learn More</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 col-md-12">
+                <div class="row g-2 align-items-center">
+                  <div class="col-lg-3"><img class="w-100" src="img/sidenews/sec.png"/></div>
+                  <div class="col-lg">
+                    <h3 class="card-title">How Jennifer Lawrence live his life.</h3>
+                    <p class="card-text"><small class="text-mutedLast">Learn More</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 col-md-12">
+                <div class="row g-2 align-items-center">
+                  <div class="col-lg-3"><img class="w-100" src="img/sidenews/third.png"/></div>
+                  <div class="col-lg">
+                    <h3 class="card-title">What’s happend in the first part of the movie.</h3>
+                    <p class="card-text"><small class="text-mutedLast">Learn More</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 col-md-12">
+                <div class="row g-2 align-items-center">
+                  <div class="col-lg-3"><img class="w-100" src="img/sidenews/fourth.png"/></div>
+                  <div class="col-lg">
+                    <h3 class="card-title">See what actors do during the movie in backstage.</h3>
+                    <p class="card-text"><small class="text-mutedLast">Learn More</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="news">
+      <div class="container">
+        <div class="row justify-content-center g-3">
+          <div class="col-lg-3 col-sm-6">
+            <div class="card"><img class="card-img-top w-100 h-100" src="img/news/firstNews.png"/>
+              <p class="mx-auto position-absolute">“Suicide Squad” voted as “The Best Viewed Movie” for 2016.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card"><img class="card-img-top w-100 h-100" src="img/news/secNews.png"/>
+              <p class="mx-auto position-absolute">Patton Oswalt has a theory about the Joker from “The Dark Knight”.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card"><img class="card-img-top w-100 h-100" src="img/news/thirdNews.png"/>
+              <p class="mx-auto position-absolute">“Captain Marvel” hit by online trolls, Disney was ready for them.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card"><img class="card-img-top w-100 h-100" src="img/news/fourthNews.png"/>
+              <p class="mx-auto position-absolute">“Avengers: Endgame” tickets are already going for hundreds on Ebay.</p>
+            </div>
+          </div>
+        </div>
+        <button class="more"><i class="fas fa-plus"></i>Load More</button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col">
+            <h3>Movies &amp; Serials</h3>
+            <div class="row">
+                  <ul class="col-sm col-6 list-unstyled m-0">
+                    <li>Action</li>
+                    <li>Adventure</li>
+                    <li>Animation</li>
+                    <li>Biography</li>
+                    <li>Comedy</li>
+                    <li>Crime</li>
+                    <li>Documentary</li>
+                    <li>Drama</li>
+                    <li>Family</li>
+                    <li>Fantasy</li>
+                  </ul>
+                  <ul class="col-sm col-6 list-unstyled m-0">
+                    <li>Film Noir</li>
+                    <li>History</li>
+                    <li>Horror</li>
+                    <li>Music</li>
+                    <li>Musical</li>
+                    <li>Mystery</li>
+                    <li>Romance</li>
+                    <li>Sci-Fi</li>
+                    <li>Short</li>
+                    <li>Sport</li>
+                  </ul>
+                  <ul class="col-sm col-6 list-unstyled m-0">
+                    <li>Superhero</li>
+                    <li>Thriller</li>
+                    <li>War</li>
+                    <li>Western</li>
+                  </ul>
+            </div>
+          </div>
+          <div class="col-sm">
+            <h3>Others</h3>
+            <div class="row">
+                  <ul class="col-sm col-6 list-unstyled m-0">
+                    <li>Home</li>
+                    <li>Top Rated Movies</li>
+                    <li>Box Office</li>
+                    <li>Tv</li>
+                    <li>Comming Soon</li>
+                    <li>Site Index</li>
+                    <li>Search</li>
+                    <li>In Theaters</li>
+                    <li>Contact Us</li>
+                    <li>Register</li>
+                  </ul>
+                  <ul class="col-sm col-6 list-unstyled m-0">
+                    <li>News</li>
+                    <li>Press Room</li>
+                    <li>Advertising</li>
+                    <li>Jobs</li>
+                    <li>Conditions of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Interests-Based Ads</li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row bottom g-4 mt-1">
+          <div class="col-sm">
+            <h2 class="d-inline-flex align-items-center"><span class="me-1">D</span>Deuce</h2>
+            <p class="m-0">&copy; 2021 Deuce Studio. All right reserved.</p>
+          </div>
+          <div class="col-sm text-sm-end align-self-end"><i class="fab fa-facebook fa-2x fa-fw"></i><i class="fab fa-google-plus fa-2x fa-fw"></i><i class="fab fa-twitter fa-2x fa-fw"></i><i class="fab fa-instagram fa-2x fa-fw"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="https://unpkg.com/shufflejs@5"></script>
+    <script src="js/libs/movieSlider.min.js"></script>
+    <script src="js/libs/shuffleMovies.min.js"></script>
+  </body>
+</html>

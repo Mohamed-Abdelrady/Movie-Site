@@ -1,0 +1,19 @@
+@mixin buttonBg($color) {
+  display: inline-block;
+  text-transform: capitalize;
+  background: $color;
+  border-radius: 30px;
+  padding: 8px 20px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  &:not(:first-of-type) {
+    margin-left: 0.5rem;
+  }
+  &:not(:last-of-type) {
+    margin-right: 0.5rem;
+  }
+  i {
+    margin-right: 10px;
+  }
+}

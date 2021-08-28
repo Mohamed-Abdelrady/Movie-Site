@@ -1,0 +1,24 @@
+.sideBar
+    ul.list-unstyled
+        li
+            .search.d-flex
+                input.bg-transparent.border-0(type='text' placeholder='Search..' aria-label='Search')
+                i.fas.fa-search
+        li
+            h3 Categories
+            +sideBarList(categories)
+        li
+            h3 Recent Posts
+            +recentPosts(recentPosts)
+        li 
+            h3 Archives
+            +sideBarList(achivves)
+        li 
+            h3 Meta
+            +sideBarList(meta)
+    .bars
+        span.bar
+        span.bar
+        span.bar
+
+    script(src="js/libs/sideBar.min.js")

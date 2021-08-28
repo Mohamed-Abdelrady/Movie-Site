@@ -1,0 +1,70 @@
+include ../varriables/articles
+mixin articles(articlez, maxArticles, loadMoreBtn)
+    - var TDK = articles.theDarkKnight
+    if articlez === TDK
+        .main-article.position-relative.container
+            .row.g-3
+                .col-md-4
+                    img.w-100(src=TDK.img)
+                .col-md
+                    h3.card-title= TDK.title
+                    ul.list-unstyled
+                        li Directed by: #{TDK.info.directed} 
+                        li Release date: 
+                            a(href="#")|#{TDK.info.released}
+                        li Length: 
+                            a(href="#")|#{TDK.info.lengthTime}
+                        li Category: #{TDK.info.Category}
+                    p.card-text= TDK.desc.descOne
+                    p.card-text= TDK.desc.descTwo
+                .col-lg-2.buttons.text-end
+                    button.add
+                        i.fas.fa-plus
+                        |Add To List
+                    .stars.mt-4
+                        - for (i=0; i<5; i++)
+                            i.fas.fa-star.fa-lg
+                        a(href="#") (96%)
+            
+    else
+        - var i = 0
+        each article in articlez
+            .main-article
+                if i != maxArticles
+                    - i = i + 1
+                    .row.g-3.align-items-start
+                        .col-lg-6
+                            img.w-100(src=article.img)
+                        .col-lg
+                                h3= article.title
+                                p= article.desc.descOne
+                                p= article.desc.descTwo
+                                small Continue Reading &gt;
+        if (loadMoreBtn == true)
+            button.more
+                i.fas.fa-plus
+                |Load More
+
+            
+
+mixin articleBlog(obj)
+    .article-blog
+        img.w-100(src=obj.link)
+        h3= obj.title
+        .icons.mb-4.align-items-center
+            span
+                i.fas.fa-comment
+                |0
+            span
+                i.fas.fa-heart
+                |23
+        .description.mb-4
+            p.card-text= obj.descOne
+            p.card-text= obj.descTwo
+            p.card-text= obj.descThree
+        h4 Share:
+        .icons
+            i(class="fab fa-facebook")
+            i(class="fab fa-google-plus")
+            i(class="fab fa-twitter")
+            i(class="fab fa-instagram")

@@ -1,0 +1,17 @@
+include ../Varriables/sideBar
+
+mixin sideBarList(arg)
+    ul.infos.list-unstyled
+        - for(i=0; i<arg.length; i++)
+            li= arg[i]
+
+mixin recentPosts(posts)
+    .recentPosts
+        each post in posts
+            .content
+                .row.g-2
+                    .col-3
+                        img.w-100(src=post.img)
+                    .col
+                        h5= post.title
+                        p Learn More

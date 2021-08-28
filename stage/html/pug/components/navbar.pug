@@ -1,0 +1,28 @@
+nav.navbar-up.container
+    a.nav-logo(href='#')
+        span D
+        |euce
+    .nav-parent
+        ul.nav-menu.list-unstyled.text-uppercase
+            li.nav-item(class=`${pageTitle == "Homepage" ? "active" : ""}`)
+                a.nav-link(href='index.html') Home
+            li.nav-item(class=`${pageTitle == "Moviepage" ? "active" : ""}`)
+                a.nav-link(href='moviepage.html') Movies
+            li.nav-item(class=`${pageTitle == "Blogpage" ? "active" : ""}`)
+                a.nav-link(href='blogpage.html') Description
+            li.nav-item(class=`${pageTitle == "Mylist" ? "active" : ""}`)
+                a.nav-link(href='mylist.html') My List
+            li.nav-item(class=`${pageTitle == "Article Blogpage" ? "active" : ""}`)
+                a.nav-link(href='articleblogpage.html') Movie Page
+    .bars.ms-4
+        span.bar
+        span.bar
+        span.bar                        
+                
+    form.d-flex
+        .search.d-flex.border-bottom.align-self-center
+            input.form-control.p-0.bg-transparent.border-0(type='text' placeholder='Search..' aria-label='Search')
+            i.fas.fa-search
+        .buttons.d-flex
+            button.bg-transparent.border-0 Login
+            button.border-0 Sign Up

@@ -1,0 +1,37 @@
+
+//-make mixin for slider
+mixin slider(moviesImg, header)
+    .slider
+        .container-fluid
+            .container
+                h2=header
+            section.items
+                .carouselOfImages
+                    each movieImg in moviesImg
+                        .carouselImage(style="background-size:cover;")
+                            img(data-tab=movieImg.title.toLowerCase().replace(/ /g, '').replace(/:/g, ''), src=movieImg.imgSrc)
+
+            //- Movies Descripton when click on
+            each movieImg in moviesImg
+                section.product-detail.hide(class=movieImg.title.toLowerCase().replace(/ /g, '').replace(/:/g, ''))
+                        .product-detail-inner
+                            a.product-detail-close X
+                            .row.align-items-center
+                                .product-detail-image.col-lg-4.col-12.mb-2.mb-lg-0
+                                    img.w-100(src="")
+                                .product-detail-text.col-lg-8.col-12
+                                    h3= movieImg.title
+                                    p= movieImg.desc
+                                    button.play(data-bs-target=".modal-1", data-bs-toggle="modal", data-the-video=movieImg.link) Show Trailer
+            
+            //- model content iframe for playing trailer
+            #dark
+            #lightbox
+            .modal.fade.modal-media.modal-video.modal-slim.modal-1(aria-labelledby="modal-1-label", role="dialog", tabindex="-1")
+                .modal-dialog.modal-xl
+                    .modal-content
+                        button.close(aria-label="Close", data-bs-dismiss="modal", type="button")
+                            span(aria-hidden="true") X
+                        .modal-body
+                            .embed-responsive.embed-responsive-16by9.h-100.w-100
+                                iframe(allowfullscreen="", frameborder="0", src="", width="100%" height="100%")

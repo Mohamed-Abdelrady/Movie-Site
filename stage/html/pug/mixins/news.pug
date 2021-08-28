@@ -1,0 +1,26 @@
+include ../varriables/news
+mixin sideNews(blogs, howManyCol='col-md-12')
+    .side-news.row
+        each news in blogs
+            .mb-3(class=`${howManyCol}`)
+                .row.g-2.align-items-center
+                    .col-lg-3
+                        img.w-100(src=news.img)
+                    .col-lg
+                            h3.card-title= news.title
+                            p.card-text
+                                small.text-mutedLast Learn More
+
+mixin news(blogs, loadMoreBtn)
+    .news
+        .container
+            .row.justify-content-center.g-3
+                each news in blogs
+                    .col-lg-3.col-sm-6
+                        .card
+                            img.card-img-top.w-100.h-100(src=news.img)
+                            p.mx-auto.position-absolute= news.title
+            if (loadMoreBtn == true)
+                button.more
+                    i.fas.fa-plus
+                    |Load More

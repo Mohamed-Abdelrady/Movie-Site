@@ -1,0 +1,16 @@
+.bg-header {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  padding-bottom: 1px;
+  @include media-breakpoint-down(lg) {
+    background-size: cover;
+  }
+  @if ($pageTitle != 'blogPage') {
+    background-image: url('../img/cover/homepage.png');
+  }
+  @if ($pageTitle == 'blogPage') {
+    background-image: url('../img/cover/blogpage.png');
+  }
+}

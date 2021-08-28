@@ -1,0 +1,26 @@
+//- mixin for banners contain movies box
+mixin movieBox(movieName, direction='order : 0') 
+    .banner
+        .container
+            .row.align-items-center
+                .col.text(style=direction)
+                    .genres
+                        ul.list-unstyled
+                            li.badge= movieName.badge.year
+                            - for(i=0; i < movieName.badge.genres.length; i++)
+                                li.badge= movieName.badge.genres[i]
+                    .info
+                        h2= movieName.title
+                        p=  movieName.desc
+                    -var float
+                    if direction == textRight
+                        -var float ="float:right"
+                    .buttons(style=float)
+                        button.play
+                            i.fas.fa-play
+                            |Play Trailer
+                        button.add
+                            i.fas.fa-plus
+                            |Add To List
+                .col-lg-6.image
+                    img.w-100(src=movieName.imgSrc)

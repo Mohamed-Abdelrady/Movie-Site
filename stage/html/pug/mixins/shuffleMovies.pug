@@ -1,0 +1,27 @@
+include ../varriables/shuffleMovies
+
+//- Define shuffle of my Movies
+mixin shuffleMovies(movies)    
+    //- creat my genres list
+    .buttons.mb-4
+        .btn-group.row.g-3.justify-content-center(role="group" aria-label="Basic radio toggle button group")
+            input.btn-check#all(type="radio" name="shuffle-filter" checked='')
+            label.col.flex-grow-0(for="all") All
+            each obj in movies
+                input.btn-check(type="radio" name="shuffle-filter" id=obj.genres)
+                label.col.flex-grow-0(for=obj.genres)= obj.genres
+    //- creat my img Shuffle
+    .row.my-shuffle.g-3
+        each obj in movies
+            - var movieList = obj["movies"]
+            each movie in movieList
+                figure.image-item.col-lg-3.col-4(data-groups=`["${obj.genres}"]`)
+                    .aspect
+                        .aspect__inner
+                            img(src=movie.src)
+        .col-1.my-sizer-elements
+    button.more
+        i.fas.fa-plus
+        |Load More
+
+

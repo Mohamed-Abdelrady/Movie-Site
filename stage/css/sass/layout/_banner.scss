@@ -1,0 +1,34 @@
+@import '../components/genres';
+.banner {
+  padding: 40px 0;
+  .text {
+    @include media-breakpoint-down(lg) {
+      order: 1 !important;
+    }
+    .genres {
+      @extend %genres;
+    }
+    h2 {
+      @extend %descHeader;
+    }
+    p {
+      @extend %paragraph;
+    }
+    .buttons {
+      @include media-breakpoint-down(lg) {
+        float: right;
+      }
+      .play {
+        @include buttonBg($trailerBtnColor);
+      }
+      .add {
+        @include buttonBg($listBtnColor);
+      }
+    }
+  }
+  .image {
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+    }
+  }
+}

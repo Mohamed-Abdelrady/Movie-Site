@@ -1,0 +1,40 @@
+.footer {
+  background-color: $bgDarkColor;
+  padding: 50px 0 10px;
+  color: $descColor;
+  h2 {
+    span {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+  h3,
+  h2 {
+    @extend %sideBarHeader;
+    margin-bottom: 15px;
+  }
+  ul {
+    line-height: 2.2;
+    li {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+  i {
+    color: $descHeaderColor;
+    &:not(:last-of-type) {
+      margin-right: 5px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .bottom {
+      text-align: center;
+      h2 {
+        margin-bottom: 0;
+      }
+      i {
+        text-align: center;
+      }
+    }
+  }
+}
